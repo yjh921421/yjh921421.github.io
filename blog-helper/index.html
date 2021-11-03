@@ -22,9 +22,13 @@
 <meta property="og:image" content="http://example.com/images/image-20211102173017139.png">
 <meta property="og:image" content="http://example.com/images/image-20211102214326401.png">
 <meta property="og:image" content="http://example.com/images/image-20211102214733271.png">
+<meta property="og:image" content="http://example.com/images/image-20211103203407002.png">
+<meta property="og:image" content="http://example.com/images/image-20211103203508460.png">
+<meta property="og:image" content="http://example.com/images/image-20211103212610792.png">
 <meta property="article:published_time" content="2021-11-03T09:58:00.000Z">
-<meta property="article:modified_time" content="2021-11-03T12:31:47.522Z">
+<meta property="article:modified_time" content="2021-11-03T13:26:13.723Z">
 <meta property="article:author" content="Yjh">
+<meta property="article:tag" content="默认">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/image-20211102172044451.png">
@@ -32,7 +36,7 @@
     <link rel="alternative" href="/atom.xml" title="Yjh的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/45414766?v=4">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -62,7 +66,7 @@
 		  <h1 class="header-author"><a href="/">Yjh</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">胆大心细</p>
+		<p class="header-subtitle">广州大学华软软件学院18级</p>
 		
 
 		<nav class="header-menu">
@@ -116,7 +120,7 @@
 			  <h1 class="header-author js-header-author">Yjh</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>胆大心细<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>广州大学华软软件学院18级<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -177,6 +181,10 @@
 <h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><p>git &amp; node</p>
 <h3 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h3><p>手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0">https://www.bilibili.com/video/BV1Yb411a7ty?spm_id_from=333.999.0.0</a></p>
+<iframe src="//player.bilibili.com/player.html?aid=44544186&bvid=BV1Yb411a7ty&cid=158772893&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+
 <span id="more"></span>
 
 <h3 id="上手"><a href="#上手" class="headerlink" title="上手"></a>上手</h3><p>确定环境准备完毕</p>
@@ -229,6 +237,23 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">../../<span class="built_in">source</span>/images/</span><br></pre></td></tr></table></figure>
 
 <p>在typora菜单栏点击 <code>格式-&gt;图像-&gt;设置图片根目录</code>，将<code>hexo/source</code>作为其根目录即可。</p>
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>添加多个标签</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tags: [标签1,标签2,标签3]</span><br><span class="line"><span class="section">#基于yaml语法</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="文章显示问题"><a href="#文章显示问题" class="headerlink" title="文章显示问题"></a>文章显示问题</h3><p>添加<code>&lt;!--more--&gt;</code>表示其以下的内容不显示，展开后显示</p>
+<h3 id="文章模板"><a href="#文章模板" class="headerlink" title="文章模板"></a>文章模板</h3><p><img src="../images/image-20211103203407002.png" alt="image-20211103203407002"></p>
+<p>如修改布局为post的模板</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line"><span class="section">tags: 默认</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下</p>
+<p><img src="../images/image-20211103203508460.png" alt="image-20211103203508460"></p>
+<h3 id="嵌入PDF"><a href="#嵌入PDF" class="headerlink" title="嵌入PDF"></a>嵌入PDF</h3><p>下载插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-pdf </span><br></pre></td></tr></table></figure>
+
+<p>嵌入PDF</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在线显示PDF --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 第一种方式，可调整pdf显示的大小，比较灵活 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">&quot;../pdf/mysql.pdf&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;750&quot;</span> <span class="attr">type</span>=<span class="string">&quot;application/pdf&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 第二种方式 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &#123;% pdf ../pdf/mysql.pdf %&#125; --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="../images/image-20211103212610792.png" alt="image-20211103212610792"></p>
 <h3 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h3><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -254,6 +279,10 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">默认</a>
+        		</li>
+      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
         		</li>
@@ -325,11 +354,11 @@
   
 <nav id="article-nav">
   
-    <a href="/Hexo/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/Hello-World/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Hello Hexo
+          Hello World
         
       </div>
     </a>
@@ -350,6 +379,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo%E5%8D%9A%E5%AE%A2"><span class="toc-number">1.</span> <span class="toc-text">Hexo博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-number">1.1.</span> <span class="toc-text">文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="toc-number">1.2.</span> <span class="toc-text">环境准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%99%E7%A8%8B"><span class="toc-number">1.3.</span> <span class="toc-text">教程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E6%89%8B"><span class="toc-number">1.4.</span> <span class="toc-text">上手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">1.5.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.6.</span> <span class="toc-text">解决图片路径问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE"><span class="toc-number">1.7.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98"><span class="toc-number">1.8.</span> <span class="toc-text">文章显示问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%A8%A1%E6%9D%BF"><span class="toc-number">1.9.</span> <span class="toc-text">文章模板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B5%8C%E5%85%A5PDF"><span class="toc-number">1.10.</span> <span class="toc-text">嵌入PDF</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%BD%95"><span class="toc-number">1.11.</span> <span class="toc-text">附录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">2.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">2.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">2.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">2.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">2.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
