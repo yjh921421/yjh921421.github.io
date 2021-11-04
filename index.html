@@ -145,6 +145,103 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-IDEA2021自定义注释模板" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/IDEA2021%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/">IDEA2021自定义注释模板</a>
+    </h1>
+  
+
+        
+        <a href="/IDEA2021%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/" class="archive-article-date">
+  	<time datetime="2021-11-04T07:54:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="自定义类注释模板"><a href="#自定义类注释模板" class="headerlink" title="自定义类注释模板"></a>自定义类注释模板</h3><p><img src="../images/image-20211104155523964.png" alt="image-20211104155523964"></p>
+<p><img src="../images/image-20211104155535846.png" alt="image-20211104155535846"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@ProjectName</span> $&#123;PROJECT_NAME&#125;</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span> TODO</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span> Yjh</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Time</span> $&#123;DATE&#125; $&#123;TIME&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="自定义方法注释模板"><a href="#自定义方法注释模板" class="headerlink" title="自定义方法注释模板"></a>自定义方法注释模板</h3><p>新建组[2]再新建模板[1]</p>
+<p><img src="../images/image-20211104155601593.png" alt="image-20211104155601593"></p>
+<p><img src="../images/image-20211104155618156.png" alt="image-20211104155618156"></p>
+<p><img src="../images/image-20211104155654198.png" alt="image-20211104155654198"></p>
+<p>Abbreviation（缩略词）设置为*，Expand with设置为Enter，当输入/**再回车即可生成</p>
+<p>设置变量</p>
+<p><img src="../images/image-20211104160252434.png" alt="image-20211104160252434"></p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groovyScript(<span class="string">&quot;def result=&#x27;&#x27;; def params=\&quot;$&#123;_1&#125;\&quot;.replaceAll(&#x27;[\\\\[|\\\\]|\\\\s]&#x27;, &#x27;&#x27;).split(&#x27;,&#x27;).toList(); for(i = 0; i &lt; params.size(); i++) &#123;result+=&#x27; * @param &#x27; + params[i] + ((i &lt; params.size() - 1) ? &#x27;\\n&#x27; : &#x27;&#x27;)&#125;; return result&quot;</span>, methodParameters()) </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">methodReturnType()</span><br><span class="line">date()</span><br><span class="line">time(&quot;HH:mm:ss&quot;)</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">*</span><br><span class="line"> * </span><br><span class="line"> *  </span><br><span class="line">$params$ </span><br><span class="line"> * <span class="meta">@return</span> $returns$ </span><br><span class="line"> * <span class="meta">@author</span> YJH</span><br><span class="line"> * <span class="meta">@date</span> $date$ $time$</span><br><span class="line"> */</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h3><p><img src="../images/image-20211104160357066.png" alt="image-20211104160357066"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">默认</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/IDEA2021%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E9%87%8A%E6%A8%A1%E6%9D%BF/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-浏览PDF示例" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
